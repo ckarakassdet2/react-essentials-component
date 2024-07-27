@@ -49,7 +49,7 @@ function App() {
         <section id='core-concepts'>
           <h2>Core Concepts</h2>
           <ul>
-            {CORE_CONCEPTS.map((conceptItem) => <CoreConcept key={conceptItem.title} {...conceptItem} ></CoreConcept> )} 
+            {CORE_CONCEPTS.map((conceptItem) => <CoreConcept key={conceptItem.title} {...conceptItem} ></CoreConcept>)}
           </ul>
         </section>
         <section id='examples'>
@@ -60,7 +60,7 @@ function App() {
             <TabButton isSelected={selectedTopic === 'props'} onSelect={() => handleSelect('props')}>Props</TabButton>
             <TabButton isSelected={selectedTopic === 'state'} onSelect={() => handleSelect('state')}>State</TabButton>
           </menu>
-          { tabContent }
+          {tabContent}
         </section>
       </main>
     </div>
